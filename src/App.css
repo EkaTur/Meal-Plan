@@ -1,38 +1,102 @@
+body {
+    background: url(Assets/food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    background-color: #dcedf7;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+textarea {
+    display: block;
+    border: 1px solid #ddd;
+    margin-top: 30px;
+    width: 70%;
+    height: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-add {
+    background-color: #77cf40;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-delete {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: "Raleway", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.whole-plan {
+    width: 70%;
+    height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.myInput {
+    width: 70%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected {
+    background-color: #fad106;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.default {
+    background-color: #dcedf7;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.mealPar {
+    color: white;
+    font-size: 20px;
+}
+
+@media all and (max-width: 800px) {
+    body{
+        background-size: cover;
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .App {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .whole-plan {
+        width: 700px;
+        margin-left: 30px;
+        margin-right: 0;
+        height: 100vh;
+    }
 }
