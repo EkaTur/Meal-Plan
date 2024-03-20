@@ -2,6 +2,10 @@
 
 This React application helps you plan your weekly meals. You can add, delete, and edit meal plans for each day of the week. The application also allows you to list ingredients for each meal.
 
+## Live Demo
+
+You can check out the live version of this website [here](https://weekly-mealplan.netlify.app/).
+
 ## Features
 
 - Add, delete, and edit meal plans for each day of the week.
